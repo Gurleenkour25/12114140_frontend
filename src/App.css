@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f3f8; /* Soft grey-blue background */
+  color: #2c3e50; /* Dark blue-grey for text */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Header and Footer */
+header, footer {
+  background-color: #1976d2; /* Brighter blue */
   color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+header h1, footer p {
+  margin: 0;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Dashboard Styling */
+.dashboard {
+  background-color: #e3e5e8; /* Light grey background */
+  padding: 30px;
+  border-radius: 12px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Column Chart Container */
+.column-chart-container {
+  background-color: #b0bec5; /* Grey background */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+/* Sparkline Charts */
+.sparkline-charts > div {
+  background-color: #b0bec5; /* Same grey background for consistency */
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 15px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ApexCharts Custom Styles */
+.apexcharts-bar-series .apexcharts-bar {
+  fill: #ff7043 !important; /* Orange bars for column chart */
+}
+
+.apexcharts-line-series .apexcharts-marker {
+  fill: #ff7043 !important; /* Orange markers */
+}
+
+.apexcharts-line {
+  stroke: #ff7043 !important; /* Orange line for sparkline */
+}
+
+.apexcharts-tooltip {
+  background: #333 !important;
+  color: white !important;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.apexcharts-legend-text {
+  color: #2c3e50 !important;
+}
+
+/* Date Range Picker Styles */
+.date-range-picker {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 20px;
+    margin: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .column-chart-container,
+  .sparkline-charts > div {
+    padding: 15px;
+  }
+
+  .date-range-picker {
+    flex-direction: column;
+    align-items: center;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
